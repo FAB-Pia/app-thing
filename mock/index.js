@@ -8,7 +8,7 @@ export const homeItems = [
   {
     title: 'Exploring Maui',
     type: 'Blog',
-    text: 'We just got back from a trip to Maui, and we had a great time...',
+    text: 'We just got back from a trip to Maui, and we had a great time. We saw a lot of amazing things, and we had a lot of fun.',
     author: 'Max Lynch',
     authorAvatar: '/img/max.jpg',
     image: images[0],
@@ -17,7 +17,7 @@ export const homeItems = [
     title: 'Arctic Adventures',
     type: 'Blog',
     text:
-      'Last month we took a trek to the Arctic Circle. The isolation was just what we needed after...',
+      'Last month we took a trek to the Arctic Circle. The isolation was just what we needed after a long trip to the Pacific Ocean.',
     author: 'Max Lynch',
     authorAvatar: '/img/max.jpg',
     image: images[1],
@@ -26,7 +26,7 @@ export const homeItems = [
     title: 'Frolicking in the Faroe Islands',
     type: 'Blog',
     text:
-      'The Faroe Islands are a North Atlantic archipelago located 320 kilometres (200 mi) north-northwest of Scotland...',
+      'The Faroe Islands are a North Atlantic archipelago located 320 kilometres (200 mi) north-northwest of Scotland.',
     author: 'Max Lynch',
     authorAvatar: '/img/max.jpg',
     image: images[2],

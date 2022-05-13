@@ -14,11 +14,24 @@ Please note: this repo isn't quite production ready as-is. Users will want to co
 
 This project is a standard Next.js app, so the typical Next.js development process applies (`npm run dev` for browser-based development). However, there is one caveat: the app must be exported to deploy to iOS and Android, since it must run purely client-side. ([more on Next.js export](https://nextjs.org/docs/advanced-features/static-html-export))
 
-To build the app, run:
+To build the app for Android, run: (Make sure to have Android Studio installed)
 
 ```bash
+# Build the App
 npm run build
 npm run export
+npx cap sync android
+npx cap open android
+```
+
+To build the app for iOS, run: (Make sure to have XCode installed)
+
+```bash
+# Build the App
+npm run build
+npm run export
+npx cap sync ios
+npx cap open ios
 ```
 
 All the client side files will be sent to the `./out/` directory. These files need to be copied to the native iOS and Android projects, and this is where Capacitor comes in:

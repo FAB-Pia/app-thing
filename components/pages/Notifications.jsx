@@ -16,15 +16,19 @@ import { getNotifications } from '../../store/selectors';
 
 import { close } from 'ionicons/icons';
 
-const NotificationItem = ({ notification }) => (
-  <IonItem>
-    <IonLabel>{notification.title}</IonLabel>
-    <IonNote slot="end">{notification.when}</IonNote>
-    <IonButton slot="end" fill="clear" color="dark">
-      <IonIcon icon={close} />
-    </IonButton>
-  </IonItem>
-);
+const NotificationItem = ({ notification }) => {
+    const notifications = Store.useState(getNotifications);
+
+    return(
+        <IonItem>
+            <IonLabel>{notification.title}</IonLabel>
+            <IonNote slot="end">{notification.when}</IonNote>
+            <IonButton slot="end" fill="clear" color="dark" onClick={() => Store.update(s => { s.notifications.splice(s.notifications.indexOf(notification.title), 1) })}>
+                <IonIcon icon={close}/>
+            </IonButton>
+        </IonItem>
+    );
+};
 
 const Notifications = ({ open, onDidDismiss }) => {
   const notifications = Store.useState(getNotifications);
