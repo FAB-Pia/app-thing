@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS + Ionic Framework + Capacitor Mobile Starter
+# Next.js + Tailwind CSS + Ionic Framework + Capacitor App
 
 ![Screenshot](./screenshot.png)
 
